@@ -1,0 +1,485 @@
+/* ================= GENERAL ================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #221f1f;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================= TOP PROMO STRIP ================= */
+.promo-strip {
+    background-color: #00b057; /* Зелена промо-смужка зверху */
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 6px 0;
+    letter-spacing: 0.4px;
+}
+
+/* ================= HEADER / NAVBAR (ЧОРНА ШАПКА) ================= */
+.rozetka-navbar {
+    background-color: #221f1f; /* Чорний фон шапки */
+    padding: 10px 0;
+}
+
+.burger-btn {
+    border: none;
+    padding: 2px 6px;
+    background: transparent;
+}
+
+.burger-btn .green-dot {
+    position: absolute;
+    top: 6px;
+    right: 4px;
+    width: 9px;
+    height: 9px;
+    background-color: #00ff66;
+    border-radius: 50%;
+}
+
+.rozetka-logo {
+    color: #ffffff !important;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.logo-smile {
+    color: #00ff66;
+    font-size: 28px;
+    line-height: 1;
+}
+
+/* Кнопка Каталог */
+.navbar .catalog-btn,
+.catalog-btn.btn {
+    background-color: #ffffff;
+    color: #111111;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.navbar .catalog-btn:hover,
+.catalog-btn.btn:hover {
+    background-color: #f0f0f0;
+    color: #000000;
+    border-color: #f0f0f0;
+}
+
+.catalog-dropdown {
+    min-width: 260px;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.catalog-dropdown .dropdown-item {
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #221f1f;
+}
+
+.catalog-dropdown .dropdown-item:hover {
+    background-color: #eef9f2;
+    color: #00a046;
+}
+
+/* Пошук */
+.rozetka-search .input-group {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 42px;
+    background: #ffffff;
+}
+
+.rozetka-search .form-control {
+    font-size: 14px;
+}
+
+.btn-search-submit {
+    background-color: #00b057;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.btn-search-submit:hover {
+    background-color: #00964a;
+    color: #ffffff;
+}
+
+/* Праві іконки */
+.header-actions .action-icon {
+    color: #ffffff;
+    font-size: 21px;
+    padding: 4px 6px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.header-actions .action-icon:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.no-arrow::after {
+    display: none !important;
+}
+
+.badge-counter {
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    font-size: 10px;
+    padding: 3px 5px;
+}
+
+
+.sidebar-wrapper {
+    border: 1px solid #e9e9e9;
+}
+
+.promo-card-side {
+    background-color: #f8f9fa;
+    border: 1px solid #ececec;
+    transition: 0.2s;
+}
+
+.promo-card-side:hover {
+    background-color: #eef9f2;
+    border-color: #bce8cd;
+}
+
+.side-badge-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    color: #221f1f;
+    font-size: 13.5px;
+    border-radius: 6px;
+    transition: 0.15s;
+}
+
+.sidebar-menu li a i {
+    color: #797878;
+    font-size: 16px;
+    width: 18px;
+    text-align: center;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #f2f2f2;
+    color: #00b057;
+}
+
+.sidebar-menu li a:hover i {
+    color: #00b057;
+}
+
+
+.rozetka-carousel {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+}
+
+.hero-slide {
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    position: relative;
+}
+
+.slide-samsung {
+    background: linear-gradient(135deg, #f0f4ff 0%, #d5e2ff 100%);
+}
+
+.slide-energy {
+    background: linear-gradient(135deg, #e7edf4 0%, #c8d6e5 100%);
+}
+
+.slide-gaming {
+    background: linear-gradient(135deg, #e3f9ec 0%, #b8eccd 100%);
+}
+
+.hero-brand-title {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+.hero-content {
+    max-width: 55%;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.hero-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #221f1f;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.hero-subtitle {
+    font-size: 15px;
+    color: #555;
+}
+
+.hero-prices strong {
+    font-size: 18px;
+    color: #221f1f;
+}
+
+.hero-visual {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-visual img {
+    max-height: 200px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.discount-badge-round {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #00b057;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.1;
+    box-shadow: 0 4px 10px rgba(0, 176, 87, 0.3);
+}
+
+.carousel-nav-circle {
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    color: #221f1f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.all-promo-link {
+    color: #3e77aa;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.all-promo-link:hover {
+    color: #f84147;
+    text-decoration: underline;
+}
+
+/* ================= PRODUCT CARDS ================= */
+.section-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #221f1f;
+}
+
+.rozetka-card {
+    background-color: #ffffff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.rozetka-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+    z-index: 2;
+}
+
+.badge-promo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.wish-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #ffa900;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.wish-btn:hover {
+    background-color: #fff3d6;
+    transform: scale(1.1);
+}
+
+.card-img-wrap {
+    height: 175px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-title {
+    color: #221f1f;
+    font-size: 13.5px;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 36px;
+}
+
+.product-title:hover {
+    color: #f84147;
+    text-decoration: underline;
+}
+
+.stars {
+    color: #ffa900;
+    font-size: 13px;
+}
+
+.old-price {
+    color: #a6a5a5;
+    font-size: 12px;
+    text-decoration: line-through;
+    line-height: 1.2;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #221f1f;
+}
+
+.cart-icon-btn {
+    color: #00b057;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+.cart-icon-btn:hover {
+    background-color: #e6f6ed;
+    color: #00964a;
+}
+
+.stock-status {
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+/* ================= FOOTER ================= */
+.rozetka-footer {
+    background-color: #221f1f;
+    color: #ffffff;
+}
+
+.rozetka-footer h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a6a5a5;
+    margin-bottom: 12px;
+}
+
+.footer-note {
+    font-size: 12.5px;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    font-size: 13px;
+    transition: 0.15s;
+}
+
+.footer-links a:hover {
+    color: #f84147;
+    text-decoration: underline;
+}
+.rozetka-logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
